@@ -1,0 +1,74 @@
+/* yläbanneri */
+.site-header {
+    background-color: rgb(75,25,132);
+}
+
+body {
+    /* fontti */
+    font-family: "Orbitron", sans-serif;
+    /* tausta */
+    background-image: url("../images/default_tausta.png");
+    background-size: cover; /* Skaalaa koko näytölle */
+    background-position: center; /* Keskittää kuvan */
+    background-repeat: no-repeat; /* Ei toistoa */
+    background-attachment: fixed; /* Pysyy paikallaan scrollatessa */
+}
+h1 {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+p {
+    color: white;
+    letter-spacing: 2px;
+}
+/* Navien yhteiset */
+.nav-link-custom {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-shadow:
+            0 0 4px currentColor;
+
+}
+
+/* Hover kaikelle navigaatiolle */
+.nav-link-custom:hover {
+    opacity: 0.5;
+    text-shadow:
+            0 0 4px currentColor,
+            0 0 8px currentColor;
+}
+
+.nav-home {
+    color: #39ff14;
+}
+
+/* Pelivalikoima */
+.nav-games {
+    color: #ff2aa3;
+}
+
+/* Tarjoilut */
+.nav-cafe {
+    color: #00d4bb;
+}
+
+/* Tapahtumat */
+.nav-events {
+    color: #ff9d00;
+}
+
+/* Yhteystiedot */
+.nav-contact {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,102,255,0.8);
+    letter-spacing: 1px;
+}
