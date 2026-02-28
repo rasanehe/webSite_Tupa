@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (active) active.classList.add("is-active");
     }
 
-    // 2) Lisää yhteydenottolomake (Modal) HTML sivun loppuun
+    // Modal yhteydenottolomake
     document.body.insertAdjacentHTML("beforeend", `
     <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered contact-modal-dialog">
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `);
 
-    // 3) Avaa modal, kun klikataan Ota yhteyttä
+    // 3) Avaa Ota yhteyttä modal on-click
     document.querySelectorAll(".nav-contact, .open-contact").forEach(el => {
         el.addEventListener("click", (e) => {
             e.preventDefault();
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 4) Lomakkeen lähetys (submit)
+    // 4) Lomakkeen lähetys
     document.addEventListener("submit", (e) => {
         if (e.target && e.target.id === "contactForm") {
             e.preventDefault();
@@ -73,5 +73,27 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "kiitos.html";
         }
     });
+    const pills = document.querySelectorAll(".category-pill[data-category]");
+    const items = document.querySelectorAll(".game-item");
+
+    if (pills.length && items.length) {
+        pills.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const cat = btn.dataset.category;
+
+                pills.forEach(b => b.classList.remove("is-active"));
+                btn.classList.add("is-active");
+
+                items.forEach(card => {
+                    card.style.display = (card.dataset.category === cat) ? "" : "none";
+                });
+            });
+        });
+
+        // Oletuksena strategiapelit näkyviin
+        items.forEach(card => {
+            card.style.display = (card.dataset.category === "strategy") ? "" : "none";
+        });
+    }
 
 });

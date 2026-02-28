@@ -21,7 +21,7 @@
             <img src="images/logo.png" alt="Logo" style="max-height:150px;">
 
             <!-- Bannerin valikko -->
-            <div class="d-flex flex-column flex-md-row gap-2 gap-md-3 mt-3 mt-md-0">
+            <div class="d-flex flex-column flex-lg-row gap-2 gap-md-3 mt-3 mt-md-0">
 
                 <a href="index.html" class="nav-link-custom nav-home" data-nav="home">Etusivu</a>
                 <a href="pelivalikoima.html" class="nav-link-custom nav-games" data-nav="games">Pelivalikoima</a>
@@ -34,25 +34,182 @@
         </div>
     </div>
 </header>
+<!--Sisältö -->
 <main class="container-fluid px-3 mt-4">
-    <h1 class="page-title">Pelivalikoima</h1>
-    <p>Tuvan pelivalikoimaa voit selata alta kategorioittain.
-        Tästä <a href="#" class="open-contact"></a> voit ehdottaa uutta peliä valikoimaamme.
-        Pelien pelaamisesta veloitetaan neljän euron vuokra,
-        jolla ylläpidetään ja päivitetään pelivalikoimaa.</p>
+    <!--Sivun esittelyteksti -->
+    <section class="page-hero">
+        <div class="page-hero-text p-3 p-md-4">
+            <h1 class="page-title">Pelivalikoima</h1>
+            <p>Tuvan pelivalikoimaa voit selata alta kategorioittain</p>
+            <p>
+                Pelaamisesta veloitetaan neljän euron vuokra, jolla ylläpidetään ja päivitetään pelivalikoimaa.
+                Voit ehdottaa valikoimaamme peliä
+                <a href="#" class="open-contact text-info">tästä.</a>
+            </p>
+        </div>
+    </section>
+
+    <!--Kategoriat sticky valikkona -->
+    <section class="games-filter sticky-top mt-4">
+        <div class="games-filter-inner">
+            <button class="btn category-pill is-active" type="button" data-category="strategy">
+                Strategiapelit
+            </button>
+
+            <button class="btn category-pill" type="button" data-category="family">
+                Koko perheen pelit
+            </button>
+
+            <button class="btn category-pill is-disabled" type="button" disabled aria-disabled="true">
+                Seurapelit (tulossa)
+            </button>
+        </div>
+    </section>
+
+    <!-- Pelit -->
+    <section class="mt-4">
+        <div class="row g-4" id="gamesGrid">
+
+            <!-- Strategiapelit -->
+            <div class="col-12 col-sm-6 col-lg-4 game-item" data-category="strategy">
+                <article class="game-card">
+                    <div class="game-media">
+                        <img src="images/carcassone.png" alt="Carcassone">
+                        <div class="game-overlay">
+                            Rakennat imperiumia ja teet tiukkoja valintoja jokaisella vuorolla.
+                        </div>
+                    </div>
+                    <div class="game-body">
+                        <h2 class="game-title">Carcassone</h2>
+                        <div class="game-meta">
+                            <span>Pelaajat: 2–4</span>
+                            <span>Ikäsuositus: 12+</span>
+                            <span>Vaikeustaso: Keskitaso</span>
+                            <span>Kesto: 60–90 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 game-item" data-category="strategy">
+                <article class="game-card">
+                    <div class="game-media">
+                        <img src="images/Brass-%20Birmingham.png" alt="Brass-Birmingham">
+                        <div class="game-overlay">
+                            Reitit, blokkaukset ja pisteoptimointi – jokainen siirto merkitsee.
+                        </div>
+                    </div>
+                    <div class="game-body">
+                        <h2 class="game-title">Brass-Birmingham</h2>
+                        <div class="game-meta">
+                            <span>Pelaajat: 2–4</span>
+                            <span>Ikäsuositus: 12+</span>
+                            <span>Vaikeustaso: Keskitaso</span>
+                            <span>Kesto: 60–90 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 game-item" data-category="strategy">
+                <article class="game-card">
+                    <div class="game-media">
+                        <img src="images/terraforming%20mars.png" alt="Terraforming">
+                        <div class="game-overlay">
+                            Reitit, blokkaukset ja pisteoptimointi – jokainen siirto merkitsee.
+                        </div>
+                    </div>
+                    <div class="game-body">
+                        <h2 class="game-title">Terraforming</h2>
+                        <div class="game-meta">
+                            <span>Pelaajat: 2–4</span>
+                            <span>Ikäsuositus: 12+</span>
+                            <span>Vaikeustaso: Keskitaso</span>
+                            <span>Kesto: 60–90 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Koko perheen pelit -->
+            <div class="col-12 col-sm-6 col-lg-4 game-item" data-category="family">
+                <article class="game-card">
+                    <div class="game-media">
+                        <img src="images/shakki.png" alt="Shakki">
+                        <div class="game-overlay">
+                            Helppo oppia ja nopea pelata – sopii koko porukalle ensipeliksi.
+                        </div>
+                    </div>
+                    <div class="game-body">
+                        <h2 class="game-title">Shakki</h2>
+                        <div class="game-meta">
+                            <span>Pelaajat: 2–4</span>
+                            <span>Ikäsuositus: 12+</span>
+                            <span>Vaikeustaso: Keskitaso</span>
+                            <span>Kesto: 60–90 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 game-item" data-category="family">
+                <article class="game-card">
+                    <div class="game-media">
+                        <img src="images/afrikan_tähti.png" alt="Afrikan tähti">
+                        <div class="game-overlay">
+                            Yhteistyöpeli: ratkaiskaa pulmia ennen kuin aika loppuu.
+                        </div>
+                    </div>
+                    <div class="game-body">
+                        <h2 class="game-title">Afrikan tähti</h2>
+                        <div class="game-meta">
+                            <span>Pelaajat: 2–4</span>
+                            <span>Ikäsuositus: 12+</span>
+                            <span>Vaikeustaso: Keskitaso</span>
+                            <span>Kesto: 60–90 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
 </main>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/site.js"></script>
+<script src="js/site.js" defer></script>
 
 
 <!--Alabanneri-->
-<footer class="text-center py-3 mt-5" style="background-color: rgba(0,0,0,0.6);">
-    <small class="text-white">
+<footer class="site-footer mt-5 py-4">
+    <div class="container-fluid px-3 text-white">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+                <h2 class="h5 mb-3">Tupa lautapelikahvila</h2>
+
+                <p class="mb-1"><strong>Osoite:</strong> Kangasalan katu 1, 36200 Kangasala</p>
+                <p class="mb-1"><strong>Puhelin:</strong> 040 191 5450</p>
+                <p class="mb-3"><strong>Sähköposti:</strong> tupa@kahvila.fi</p>
+
+                <a class="footer-map-link"
+                   target="_blank"
+                   rel="noopener"
+                   href="https://www.google.com/maps?q=61.46168812277982,24.073235227832207">
+                    Avaa kartta
+                </a>
+            </div>
+
+            <!-- Alarivi -->
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small text-white">
+                <span>© 2026 Tupa</span>
+                <span>
         Background image:
-        <a href="https://www.freepik.com" target="_blank" class="text-info">
-            Designed by Asmaarzq / Freepik
-        </a>
-    </small>
+        <a href="https://www.freepik.com" target="_blank" class="text-info">Designed by Asmaarzq / Freepik</a>
+      </span>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
