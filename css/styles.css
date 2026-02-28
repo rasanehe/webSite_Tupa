@@ -72,3 +72,29 @@ p {
     box-shadow: 0 0 10px rgba(0,102,255,0.8);
     letter-spacing: 1px;
 }
+/* ========== AKTIIVINEN SIVU NAVISSA ========== */
+.nav-link-custom.is-active {
+    /* selkeä "tässä olet" -merkki */
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+
+    /* pieni lisäkorostus */
+    opacity: 1;
+    filter: brightness(1.15);
+}
+
+/* (Valinnainen) pieni taustakorostus aktiiviselle linkille */
+.nav-link-custom.is-active {
+    padding: .35rem .6rem;
+    border-radius: .5rem;
+    background: rgba(255,255,255,0.08);
+}
+
+
+/* h1 vaihtuu sivun mukaan */
+body[data-page="home"]  .page-title { color: #39ff14; }
+body[data-page="games"] .page-title { color: #ff2aa3; }
+body[data-page="cafe"]  .page-title { color: #00d4bb; }
+body[data-page="events"] .page-title { color: #ff9d00; }
+

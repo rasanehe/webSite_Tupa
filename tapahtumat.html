@@ -11,7 +11,7 @@
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
-<body>
+<body data-page="events">
 <header class="site-header py-3">
     <div class="container-fluid px-3">
         <!--oikean ja vasemman reunan elementtien väliin tila + pystysuuntainen align-->
@@ -23,12 +23,11 @@
             <!-- Bannerin valikko -->
             <div class="d-flex flex-column flex-md-row gap-2 gap-md-3 mt-3 mt-md-0">
 
-                <a href="index.html" class="nav-link-custom nav-home">Etusivu</a>
-                <a href="pelivalikoima.html" class="nav-link-custom nav-games">Pelivalikoima</a>
-                <a href="tarjoilut.html" class="nav-link-custom nav-cafe">Tarjoilut</a>
-                <a href="tapahtumat.html" class="nav-link-custom nav-events">Tapahtumat</a>
-
-                <a href="#" class="nav-contact btn btn-sm">Yhteystiedot</a>
+                <a href="index.html" class="nav-link-custom nav-home" data-nav="home">Etusivu</a>
+                <a href="pelivalikoima.html" class="nav-link-custom nav-games" data-nav="games">Pelivalikoima</a>
+                <a href="tarjoilut.html" class="nav-link-custom nav-cafe" data-nav="cafe">Tarjoilut</a>
+                <a href="tapahtumat.html" class="nav-link-custom nav-events" data-nav="events">Tapahtumat</a>
+                <a href="#" class="nav-contact btn btn-sm">Ota yhteyttä</a>
 
             </div>
 
@@ -36,7 +35,7 @@
     </div>
 </header>
 <main class="container-fluid px-3 mt-4">
-    <h1>Tapahtumat</h1>
+    <h1 class="page-title">Tapahtumat</h1>
     <p>Tuvan pelivalikoimaa voit selata alta kategorioittain.
         Tästä [linkki] voit ehdottaa uutta peliä valikoimaamme.
         Pelien pelaamisesta veloitetaan neljän euron vuokra,
