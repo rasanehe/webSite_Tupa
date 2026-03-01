@@ -30,6 +30,22 @@ p2 {
     font-weight:bold;
     letter-spacing: 2px;
 }
+/* Mobiilin fonttien suurennus */
+@media (max-width: 576px) {
+    body {
+        font-size: 1.05rem;
+    }
+    p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .game-meta span {
+        font-size: 0.95rem;
+    }
+    .nav-link-custom {
+        font-size: 1.05rem;
+    }
+}
 
 /*NAVIGAATIO*/
 /* Navien yhteiset */
