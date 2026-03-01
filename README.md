@@ -4,7 +4,7 @@ lautapelikahvila Tuvalle.
 Sivujen ja kahvilan teema on 80 -luvun arcade pelihalli, 
 joten sivuilla on käytetty runsaasti neon väriä ja glow efektiä. 
 
-Sivut on julkaistu gothubin kautta 
+Sivut on julkaistu githubin kautta 
 osoiteessa:https://rasanehe.github.io/webSite_Tupa/
 
 teknologiat: bootstrap, css, js, html
