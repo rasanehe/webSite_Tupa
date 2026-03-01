@@ -24,6 +24,12 @@ p {
     color: white;
     letter-spacing: 2px;
 }
+p2 {
+    color: #00d4bb;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+
 /*NAVIGAATIO*/
 /* Navien yhteiset */
 .nav-link-custom {
@@ -164,6 +170,12 @@ body[data-page="events"] .page-title { color: #ff9d00; }
     object-fit: cover;
     display: block;
 }
+/*pelisivun poikkeava grid*/
+.page-hero-compact{
+    min-height: auto;
+    margin-bottom: 0;
+}
+
 /* Pelisivun sticky valikko */
 .games-filter{
     top: 0.5rem;
